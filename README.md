@@ -42,4 +42,6 @@ can skip existing ones if you want.
 * `/usr/local/bin/vim` will be symlinked to `nvim`.
 * Vim-Plug is used to install plugins. Submodules have been removed.
 
+> Vim writes back-up and temp files to [`~/.vim/`](https://github.com/subdigital/dotfiles/blob/master/.vimrc#L163-L164). If you encounter the error `E303: Unable to open swap file`, you might have to create those directories from the command line to fix the error: `mkdir ~/.vim/_backup/ && mkdir ~/.vim/_temp/`.
+
 
